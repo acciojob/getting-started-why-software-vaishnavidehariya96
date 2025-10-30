@@ -1,2 +1,24 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Your CSS Code here. */
+/* ===== Body Styling ===== */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f6fa;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+/* ===== Text Styling ===== */
+#text {
+  font-size: 1.8rem;
+  color: #007bff;
+  font-weight: 600;
+  text-align: center;
+}
