@@ -1,20 +1,20 @@
-// Wait until the page is fully loaded
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("✅ Page loaded successfully!");
+// script.js
 
-  // Select the div with id="text"
+// Wait until the document is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
   const textDiv = document.getElementById("text");
 
-  // Optional: Change text color after a delay
-  setTimeout(() => {
-    textDiv.style.color = "#28a745"; // changes color to green
-  }, 1500);
+  // When the user clicks the text, show a message
+  textDiv.addEventListener("click", function() {
+    alert("Keep learning and building amazing websites! 🌐");
+  });
 
-  // Optional: Add fade-in animation
-  textDiv.style.opacity = 0;
-  textDiv.style.transition = "opacity 1.5s ease-in-out";
+  // Optional: change color when hovered
+  textDiv.addEventListener("mouseover", function() {
+    textDiv.style.color = "#007bff";
+  });
 
-  setTimeout(() => {
-    textDiv.style.opacity = 1;
-  }, 300);
+  textDiv.addEventListener("mouseout", function() {
+    textDiv.style.color = "#2c3e50";
+  });
 });
